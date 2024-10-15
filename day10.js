@@ -4,6 +4,17 @@
 // The first time the returned function is called, it should return the same result as fn.
 // Every subsequent time it is called, it should return undefined.
 
+// const once = (fn) => {
+//     let isCall = true;
+//     return(...args)=>{
+//         if(isCall){
+//             return undefined
+//         }
+//         isCall = false;
+//         return fn(...args)
+//     }
+
+// }
 const once = (fn) => {
     let isCall = false;
     return(...args)=>{
@@ -13,6 +24,7 @@ const once = (fn) => {
         isCall = true;
         return fn(...args)
     }
+
 }
 const fn = (a,b,c)=>(a+b+c);
 let oncefn = once(fn);
