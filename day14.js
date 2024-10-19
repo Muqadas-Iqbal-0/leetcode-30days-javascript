@@ -19,9 +19,8 @@ var cancellable = function (fn, args, t) {
 };
 
 function fn() {
-  console.log("Hello"); // this will be printed after 1 second  
+  console.log("Hello"); // this will be printed after 1 second
 }
 
 const cancel = cancellable(fn, [1], 1000);
 cancel();
-
