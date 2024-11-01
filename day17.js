@@ -1,13 +1,4 @@
-// let mymap = new Map([
-//   ["name", "muqadas"],
-//   ["age", 21],
-//   [true, "boolkey"],
-//   [1, "numberkey"],
-// ]);
-// mymap.set("class", "BSCS");
 
-// console.log(mymap.delete("age"));
-// console.log(mymap);
 class TimeLimittedCache {
   constructor() {
     this.cache = new Map();
@@ -42,3 +33,17 @@ console.log(cache.get(1));
 
 console.log(cache.count());
 //   cache.get(4);
+
+
+
+
+// let mymap = new Map([
+//   ["name", "muqadas"],
+//   ["age", 21],
+//   [true, "boolkey"],
+//   [1, "numberkey"],
+// ]);
+// mymap.set("class", "BSCS");
+
+// console.log(mymap.delete("age"));
+// console.log(mymap);
